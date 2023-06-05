@@ -28,7 +28,13 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">What We Do</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html#burglary">Burglary Detection</a></li>
+                                <li><a class="dropdown-item" href="services.html#firealarms">Fire Alarm Systems</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -36,63 +42,36 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container">
-                <div class="masthead-heading text-uppercase">Contact Us</div>
-            </div>
+            <div class="container"></div>
         </header>
 
-        <!-- Team-->
-        <section class="page-section" id="team">
+        <!-- Contact Overhead -->
+        <section class="page-section" id="aboutus">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">We are here to serve you.</h3>
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">
+                        Thanks for your interest in SPS
+                    </h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/images/team/1.jpg" alt="..." />
-                            <h4>Felix Guardado</h4>
-                            <p class="text-muted">Senior Technician</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/images/team/2.jpg" alt="..." />
-                            <h4>Harrison Guardado</h4>
-                            <p class="text-muted">Junior Technician</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/images/team/3.jpg" alt="..." />
-                            <h4>Joselito A Guardado</h4>
-                            <p class="text-muted">Information Technology</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+                <div class="row text-center">
+					<p class="text-muted">
+                        Give us a call or use the form below and we will get back to you as soon as we can.
+                        We look forward to hearing from you.
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">
-						Give us a call or use the form below and we will get back to you as soon as we can.
-						We look forward to hearing from you.
-					</p></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services-->
-        <section class="page-section bg-light">
-            <div class="container">
-                <div class="row justify-content-around text-center">
+                <div class="row justify-content-around text-center" style="margin-top: 50px;">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-map fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Location</h4>
+                        <p class="text-muted">
+                            65 Prospect Ave<br>
+                            Brentwood NY 11717
+                        </p>
+                    </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -147,8 +126,7 @@
                             </div>
                             <div class="form-group mb-md-0">
                                 <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone" />
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -156,6 +134,65 @@
                                 <!-- Message input-->
                                 <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col col-sm-4">
+                                    <h3 class="section-subheading" style="color: whitesmoke;">What Can We Help You With?</h3>
+                                </div>
+                                <div class="col col-sm-8">
+                                    <div class="row">
+                                        <div class="col col-sm-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault" style="color: whitesmoke;">Residential</label>
+                                        </div>
+                                        <div class="col col-sm-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault" style="color: whitesmoke;">Commercial</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col col-sm-4">
+                                    <h3 class="section-subheading" style="color: whitesmoke;">Best Way To Contact?</h3>
+                                </div>
+                                <div class="col col-sm-6">
+                                    <div class="row">
+                                        <div class="col col-sm-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault" style="color: whitesmoke;">Phone</label>
+                                        </div>
+                                        <div class="col col-sm-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault" style="color: whitesmoke;">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col col-sm-4">
+                                    <h3 class="section-subheading" style="color: whitesmoke;">Best Time To Contact?</h3>
+                                </div>
+                                <div class="col col-sm-6">
+                                    <div class="row">
+                                        <div class="col col-sm-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault" style="color: whitesmoke;">AM</label>
+                                        </div>
+                                        <div class="col col-sm-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault" style="color: whitesmoke;">PM</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
